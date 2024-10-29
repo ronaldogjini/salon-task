@@ -42,7 +42,6 @@ const SQL = {
   GROUP BY 
       rd.employee_id,
       rd.retention_month,
-      rd.retained_count
   ORDER BY 
       rd.employee_id,
       rd.retention_month;`
