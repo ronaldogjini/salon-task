@@ -1,0 +1,31 @@
+nav {
+    background-color:rgb(232, 132, 101);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .nav-logo {
+        height: 40px; 
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    li a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

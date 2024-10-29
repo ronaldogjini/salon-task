@@ -1,0 +1,22 @@
+<div class="main-container">
+  <div class="date-picker-container">
+    <app-date-picker 
+      [title]="'Reference Date'"
+      [value]="referenceDate" 
+      [max]="calculateRefDateMax()"
+      (change)="updateReferenceDate($event)">
+    </app-date-picker>
+    <app-date-picker 
+      [title]="'End Date'" 
+      [value]="endDate"
+      [min]="calculateEndDateMin()"
+      (change)="updateEndDate($event)">
+    </app-date-picker>
+  </div>
+  <div *ngIf="error" class="error-message">{{ error }}</div>
+  <div class="table-container">
+    <app-spinner *ngIf="loading"></app-spinner>
+    <app-retention-table *ngIf="!loading" [data]="transformedData" [columns]="displayedColumns"></app-retention-table>
+  </div>
+</div>
+  
