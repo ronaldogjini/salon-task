@@ -4,7 +4,7 @@ This is the presentation for the retention data task by Ronaldo Gjini.
 
 This project includes the backend and frontend components necessary for analyzing and visualizing retention data. The backend is built with Node.js and SQLite, while the frontend is developed using Angular.
 
-![Retention Data Visualization](assets/images/screenshot.png)
+![Retention Data Visualization](screenshot.png)
 
 ## Getting Started
 
