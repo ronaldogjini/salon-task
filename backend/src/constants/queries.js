@@ -41,7 +41,7 @@ const SQL = {
   JOIN ReferenceClients rc ON rd.employee_id = rc.employee_id
   GROUP BY 
       rd.employee_id,
-      rd.retention_month,
+      rd.retention_month
   ORDER BY 
       rd.employee_id,
       rd.retention_month;`
