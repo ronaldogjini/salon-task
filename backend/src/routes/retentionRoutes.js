@@ -10,7 +10,7 @@ router.get("/monthly", validateDateParams, async (req, res, next) => {
     const result = await retentionService.getMonthlyRetention(referenceDate, endDate);
     res.json(result);
   } catch (error) {
-    return res.status(500).json({ error: err.message });
+    return res.status(500).json({ error: error.message });
   }
 });
 
